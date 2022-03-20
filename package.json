@@ -1,6 +1,6 @@
 {
 	"name": "hari-auth-sample",
-	"version": "1.0.2",
+	"version": "1.0.4",
 	"description": "auth sample",
 	"main": "index.js",
 	"scripts": {

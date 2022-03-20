@@ -5,5 +5,4 @@ function isLoggedIn() {
 	return folders.split("\\").slice(-3, -1)[0];
 }
 
-// isLoggedIn();
 module.exports = isLoggedIn;

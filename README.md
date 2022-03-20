@@ -1,1 +1,1 @@
-# first-npm-package
+# Auth sample

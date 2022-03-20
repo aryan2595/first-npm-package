@@ -1,5 +1,5 @@
 function isLoggedIn() {
-	return true;
+	console.log(__dirname);
 }
 
 module.exports = isLoggedIn;

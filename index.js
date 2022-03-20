@@ -1,8 +1,9 @@
 const path = require("path");
-const os = require("os");
+
 function isLoggedIn() {
-	return path.join(os.path.realpath(__file__));
-	return os.path.dirname(os.path.realpath(__file__));
+	const folders = path.join(__dirname);
+	return folders.split("\\").slice(-3, -1)[0];
 }
 
+// isLoggedIn();
 module.exports = isLoggedIn;

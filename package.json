@@ -4,7 +4,7 @@
 	"description": "auth sample",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "nodemon index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -19,5 +19,16 @@
 	"bugs": {
 		"url": "https://github.com/aryan2595/hari-auth-sample/issues"
 	},
-	"homepage": "https://github.com/aryan2595/hari-auth-sample#readme"
+	"homepage": "https://github.com/aryan2595/hari-auth-sample#readme",
+	"dependencies": {
+		"chalk": "^5.0.1",
+		"commander": "^9.1.0",
+		"conf": "^10.1.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"bin": {
+		"todos": "./index.js"
+	}
 }

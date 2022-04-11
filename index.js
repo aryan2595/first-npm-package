@@ -1,8 +1,11 @@
-const path = require("path");
+const { program } = require("commander");
 
-function isLoggedIn() {
-	const folders = path.join(__dirname);
-	return folders.split("\\").slice(-3, -1)[0];
-}
+program.command("list").description("List all the TODO tasks").action(list);
 
-module.exports = isLoggedIn;
+const conf = new (require("conf"))();
+
+function list() {}
+
+const todoList = conf.get("todo-list");
+const list = require("./commands/list");
+program.parse();
